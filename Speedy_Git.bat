@@ -21,7 +21,7 @@ echo    2. Push with custom message.
 echo    3. Pull new updates.
 echo    4. Pull and Merge updates from a forked repo.
 echo    5. Check your notifications at Github.
-echo    6. Show me all remotes.
+echo    6. Show me all remotes...
 echo    7. Add an upstream remote from a forked repo.
 echo    8. Exit.
 set /p "option=### Make your choice:"
