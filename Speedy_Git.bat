@@ -19,10 +19,11 @@ echo   Available commands are:
 echo    1. Push with automated commit.
 echo    2. Push with custom message.
 echo    3. Pull new updates.
-echo    4. Pull and Merge updates from forked repo.
+echo    4. Pull and Merge updates from a forked repo.
 echo    5. Check your notifications at Github.
 echo    6. Show me all remotes.
-echo    7. Exit.
+echo    7. Add an upstream remote from a forked repo.
+echo    8. Exit.
 set /p "option=### Make your choice:"
 echo.
 echo =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
@@ -73,6 +74,13 @@ IF "%option%"=="1" (
 	echo ### Great, everything went well! Press any key for exit.
     pause >nul
 ) ELSE IF "%option%"=="7" (
+	set /p "url=### Paste the URL from the original(forked) repo and press Enter:"
+    call git remote add upstream %url%
+    echo =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+	echo.
+	echo ### Great, everything went well! Press any key for exit.
+    pause >nul
+) ELSE IF "%option%"=="8" (
 	exit
 ) ELSE (
     exit
