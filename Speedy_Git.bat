@@ -72,7 +72,7 @@ IF "%option%"=="1" (
 	echo.
 	echo ### Great, everything went well! Press any key for exit.
     pause >nul
-) ELSE IF "%option%"=="6" (
+) ELSE IF "%option%"=="7" (
 	exit
 ) ELSE (
     exit
