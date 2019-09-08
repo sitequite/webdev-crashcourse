@@ -7,6 +7,8 @@
   width: 1219px;
   height: 699px;
   background-image: url("bcg.png");
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #form-content {
@@ -16,11 +18,8 @@
   color: white;
 }
 
-h2 {
-  margin-bottom: 0;
-}
-
-label {text-transform: uppercase;}
+h2 {margin-bottom: 0; font-size: 35px;font-weight: initial;}
+label {text-transform: uppercase;font-size: 11px;}
 
 ::placeholder {
   color: #fefefe;
@@ -29,49 +28,42 @@ label {text-transform: uppercase;}
 }
 
 .form-group {width: 390px;background-color: #9b62e62b;margin: 20px 0;padding: 10px;}
-input.form-control {width: 98.5%; margin-top: 8px;}
+input.form-control {width: 98%; margin-top: 8px;}
+input[type="text"], input[type="number"], input[type="email"], textarea {background: transparent;border: none;padding-left: 7px;line-height: 30px; font-size: 12px;font-family: Verdana, Geneva, sans-serif;}
 
-input[type="text"], input[type="number"], input[type="email"], textarea
-{
-    background: transparent;
-    border: none;
-	padding-left: 7px;
-	padding-bottom: 10px;
-}
-
-input:focus {
+input:focus, textarea:focus {
   background-color: white;
   border-radius: 2px;
   color: #6d69f3;
 }
 
 textarea {
-
-    width: 390px;
-    min-height: 289px;
-    margin-top: 15px;
-
+  width: 382px;
+  min-height: 320px;
+  margin-top: 15px;
 }
 
-#left-form-side {
+#left-form-side {float: left;}
+#right-form-side {float: right;}
 
-    float: left;
-
+#my-btn {
+  width: 190px;
+  height: 35px;
+  font-size: 10px;
+  font-weight: bold;
+  background: linear-gradient(to right, #e51d2a 0%,#922988 100%);
+  border: none;
+  color: white;
+  border-radius: 2px;
 }
 
-#right-form-side {
 
-    float: right;
-
-}
 </style>
-
-
 </head>
 
 <div id="my-form">
 <div id="form-content">
-<h2>Contact US!</h2>
+<h2>Contact Us!</h2>
 <p>Got a question? We 'll give a straight answer!</p>
 
 <form action="/action_page.php">
@@ -97,11 +89,11 @@ textarea {
 <div>
  <div class="form-group">
   <label for="usr">Message</label><br />
-  <textarea id="subject" name="subject" placeholder="Plese, describe something about ypur project ..."></textarea>
+  <textarea id="subject" name="subject" placeholder="Please, describe something about ypur project ..."></textarea>
   </div>
 </div>
 </div>
-  <input type="submit" value="Submit">
+  <input type="submit" value="SEND MESSAGE" id="my-btn">
 </form> 
 
 </div>
