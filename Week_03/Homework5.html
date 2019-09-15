@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+h3 {
+  margin: 0 0 15px 0;
+  color: white;
+  font-size: 23px;
+  font-weight: 200;
+}
+
+label {
+  color: white;
+  font-size: 14px;
+}
+
+input[type=text], input[type=email], select, textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #fead3b;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: -5px;
+  font-size: 15px;
+}
+
+input[type=submit]:hover {
+  background-color: #fb9810;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #730d3d;
+  padding: 20px 12px;
+  width: 30%;
+}
+</style>
+</head>
+<body>
+
+<div class="container"> <!-- Start main div -->
+  <h3>Get in touch</h3>
+  <form action="/action_page.php">
+    <label for="fname">Name*</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name ...">
+
+    <label for="email">Email*</label>
+	<input type="email" name="email" placeholder="Your email adress ..." id="email">
+    
+
+    <label for="tel">Phone</label>
+    <input type="text" name="name" placeholder="Please, enter your mobile phone ..." id="tel">
+
+    <label for="message">Message*</label>
+    <textarea id="message" name="message" placeholder="Write something ..." style="height:90px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>   <!-- End main div -->
+
+</body>
+</html>
 
