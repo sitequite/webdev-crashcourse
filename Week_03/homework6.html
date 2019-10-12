@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Homework 6</title>
+    <style>
+    * {margin: 0; padding: 0;}    
+    form {max-width: 300px; border: 1px solid #ccc; margin: 40px auto;background-color: #fbf4fb;}
+    div#firstPart p{background-color: #fbf4fb;padding-left: 20.5px;min-height: 53px;line-height: 72px;color: #777378;font-size: 26px;border-bottom: 1px solid #ccc;margin: 0;}
+    .heads {margin-bottom: 5px;}
+    div#secondPart {border-bottom: 1px solid #ccc; padding-left: 20.5px; background-color: #fff8ff; color: #777378;}
+    #sp1 {padding: 10px 0 18px 0;}  
+    #heading3 {margin-top: 20px;}
+    textarea {margin-bottom: 12px;}
+    select {
+    width: 93%;
+    padding: 11px;
+    color: #aca9a9;
+    font-size: 15.5px;
+    }
+        
+    textarea:focus, select:focus {
+    border-color: #bc517d;
+    }
+    input[type="submit"] {
+
+    right: 0;
+    padding: 9px 29px;
+    color: white;
+    background-color: #db6a98;
+    border-style: none;
+    clear: both;
+    display: table;
+    margin: 7% 7% 8% 57%;
+    font-size: 17px;
+    }    
+    </style>
+</head>
+
+<body>
+   <form action="/action_page.php">
+    <div id="firstPart"><p>Birthday party</p></div>
+    
+    <div id="secondPart">
+    <div id="sp1">
+    <p class="heads">Yes, I can make it:</p>
+    <input type="radio" id="ans1" class="radioButton" name="answer" value="For sure"> <label for="ans1">For sure</label><br>
+    <input type="radio" class="radioButton" name="answer" value="Not sure"> Not sure<br>
+    <input type="radio" class="radioButton" name="answer" value="Sorry, I can't"> Sorry, I can't<br>
+    </div>
+    
+    <div>
+    <p class="heads">Number of people:</p>
+    <select>
+    <option value="Just me">Just me</option>
+    <option value="Me and one friend">Me and one friend</option>
+    <option value="Me and 2 more friends">Me and 2 more friends</option>
+    <option value="Me and several people">Me and several people</option>
+    </select>
+    </div>
+    
+    <div>
+    <p id="heading3" class="heads">Your comments:</p>
+    <textarea rows="4" cols="30"></textarea>
+    </div>
+    </div>
+
+
+    <div id="thirdPart">
+    <input type="submit" value="Submit">
+    </div>
+    </form>
+</body>
+</html>
