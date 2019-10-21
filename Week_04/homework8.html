@@ -1,1 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+       body {
+background: rgba(33,191,228,1);
+background: -moz-linear-gradient(45deg, rgba(33,191,228,1) 0%, rgba(220,28,251,1) 100%);
+background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(33,191,228,1)), color-stop(100%, rgba(220,28,251,1)));
+background: -webkit-linear-gradient(45deg, rgba(33,191,228,1) 0%, rgba(220,28,251,1) 100%);
+background: -o-linear-gradient(45deg, rgba(33,191,228,1) 0%, rgba(220,28,251,1) 100%);
+background: -ms-linear-gradient(45deg, rgba(33,191,228,1) 0%, rgba(220,28,251,1) 100%);
+background: linear-gradient(45deg, rgba(33,191,228,1) 0%, rgba(220,28,251,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#21bfe4', endColorstr='#dc1cfb', GradientType=1 );
+} 
+       #myForm {
+           width: 430px;
+           height: 750px;
+           background-color: #fff;
+           border-radius: 10px;
+           margin: 40px auto 40px;
+           font-family: Verdana, sans-serif;
+       }
+    
+       h1 {
+           text-align: center;
+           padding-top: 50px;
+       }
+    
+       label, input {display: block;}
+       
+       #service, #budget {color: #353535;font-weight: bold;}
+       
+       #name-and-email, #form-options, #form-msg, input[type='submit'] {margin: 0 25px 0;}
+       #name, #mail, select {width: 98.5%;border-top: none;border-left: none;border-right: none;border-bottom: 2px solid #e5e5e5;padding-bottom: 17px;color: #888;}
+       
+       #form-options select {
+       -webkit-appearance: none;  /*Removes default chrome and safari style*/
+       -moz-appearance: none;  /*Removes default style Firefox*/
+       }
+       label {font-size: 15px;margin: 10px auto 14px;color: #666363;}
+       
+       #massage {
+           border: none;
+           border-bottom-color: currentcolor;
+           border-bottom-style: none;
+           border-bottom-width: medium;
+           border-bottom: 2px solid #e5e5e5;
+           width: 99%;
+       }
+       
+       input[type='submit'] {
+           width: 88%;
+           padding: 12px;
+           margin-top: 50px;
+           border: none;
+           color: #fff;
+           border-radius: 30px;
+           cursor: pointer;
+           font-weight: bold;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f803fe+0,7578ef+49,02d9de+100 */
+background: #f803fe; /* Old browsers */
+background: -moz-linear-gradient(left,  #f803fe 0%, #7578ef 49%, #02d9de 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #f803fe 0%,#7578ef 49%,#02d9de 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #f803fe 0%,#7578ef 49%,#02d9de 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f803fe', endColorstr='#02d9de',GradientType=1 ); /* IE6-9 */
 
+
+}
+   </style>
+    <meta charset="UTF-8">
+    <title>Homework 8</title>
+</head>
+<body>
+   <div id="myForm">
+       <h1>Say Hallo!</h1>
+       <form>
+         <div id="name-and-email">
+          <label for="name">Your Name</label>
+          <input type="text" name="yourName" id="name" placeholder="Enter Your Name">
+          <label for="mail">Email</label>
+          <input type="email" name="email" id="mail" placeholder="Enter your Email Address">
+          </div>
+          
+          <div id="form-options">
+          <label for="service">Needed Service</label>
+          <select name="choose-sevice" id="service">
+              <option value="">Choose Service</option>
+              <option value="banking">Banking</option>
+              <option value="onlineBaking">Online Banking</option>
+          </select>
+          
+          <label for="budget">Budget</label>
+          <select name="selectbudget" id="budget">
+              <option value="">Select Budget</option>
+              <option value="100">100</option>
+              <option value="200">200</option>
+          </select>
+          </div>
+          
+          <div id="form-msg">
+          <label for="massage">Massage</label>
+          <textarea rows="8" id="massage" placeholder="Your Massage Here..."></textarea>
+          </div>
+          
+          <input type="submit" value="Submit &#8594;" />
+       </form>
+    </div>
+   
+</body>
+</html>
