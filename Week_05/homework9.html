@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 9</title>
+    <style>
+       body {background-color: #57b8eb;}
+        #cardinalDiv, #logIn {-webkit-box-shadow: 0px 17px 18px 10px rgba(171,162,171,0.65);-moz-box-shadow: 0px 17px 18px 10px rgba(171,162,171,0.65);box-shadow: 0px 17px 18px 10px rgba(171,162,171,0.65);}
+       #logIn {-webkit-box-shadow: 0px 11px 12px 1px rgba(171,162,171,0.65);-moz-box-shadow: 0px 11px 12px 1px rgba(171,162,171,0.65);box-shadow: 0px 11px 12px 1px rgba(171,162,171,0.65);}
+       .firstPart, #cardinalDiv {background-color: #fff;max-width: 305px;margin: 0 auto;}
+       #myForm, #firstDiv {padding: 25px 30px 20px;text-align: center;}
+    #firstDiv {border-bottom: 1px solid #cccccc78;}
+       .topButtons {font-size: 20px;text-decoration: none;width: 82px; display: inline;margin-right: 14px;}
+        h2.topButtons a {text-decoration: none;}
+        #headers {margin-bottom: 18px;text-align: center;}
+        .active {border-bottom: 2px solid #57b8eb;}
+        h2.active a {color: #000;}
+        h2.pasive a {color: #ccc;}
+        img#userAvatar {display: block; margin: 0px auto;}
+        .myInputs {border: none;text-align: center;margin-bottom: 20px;}
+        #logIn {border: none; background-color: #57b8eb; color: #fff; padding: 10px 80px;border-radius: 4px; }
+        #lostPass {text-align: center;max-width: 365px;padding: 28px 0px;}
+        div#lostPass a {text-decoration: none;color: #57b8ebba;}
+        
+    </style>
+</head>
+<body>
+  <div id="cardinalDiv">
+   <div id="firstDiv" class="firstPart">
+   <div id="headers">
+       <h2 class="topButtons active"><a href="#">SIGN IN</a></h2>
+       <h2 class="topButtons pasive"><a href="#">SIGN UP</a></h2>
+   </div>
+   <img id="userAvatar" src="images/User_Avatar.png" alt="User Icon" width="214" height="169">
+   <form id="myForm" action="/action_page.php">
+   <input class="myInputs" type="text" name="Login" placeholder="Login" ><br>
+   <input class="myInputs" type="text" name="Password" placeholder="Password" ><br>
+   <input id="logIn" type="submit" value="LOG IN">
+</form>
+</div>
+<div id="lostPass" class="firstPart">
+    <a href="#">Forgot Password?</a>
+</div></div>
+</body>
+</html>
