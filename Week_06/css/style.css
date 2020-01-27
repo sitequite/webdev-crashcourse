@@ -1,0 +1,64 @@
+
+body {background-color: #30b58a;}
+#myForm {margin: 0 auto;width: 420px;text-align: center;}
+#myElements {
+    background-color: #fff;
+    padding: 30px 20px;
+}
+
+img {
+
+    border: 2px solid white;
+    border-radius: 50%;
+
+}
+
+#shape {
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 15px 15px 15px;
+border-color: transparent transparent #fff transparent;
+
+    
+}
+
+
+input {
+
+    background-color: #ececec;
+    border: none;
+    padding: 15px 2px 14px 18px;
+    width: 80%;
+
+}
+
+.myIcons {
+
+    padding: 14.5px;
+    background: #cecece;
+    color: white;
+
+}
+
+input[type="password"] {margin-top: 1px;}
+
+input[type="Submit"] {
+
+    border: none;
+    padding: 10px 135px;
+    background-color:#ffde13;
+
+}
+
+
+div#link{margin-top: 25px;}
+#firstLink{ text-decoration: none;
+}
+
+.colorLink {
+    color: black;
+
+}
