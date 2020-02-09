@@ -1,0 +1,22 @@
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  max-width: 860px;
+}
+
+#myImage {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.myPar {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.carousel-caption {
+  right: 5%;
+  left: 10%;
+}
