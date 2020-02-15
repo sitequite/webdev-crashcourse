@@ -6,6 +6,20 @@
   max-width: 860px;
 }
 
+body {
+background: #dda4cb;
+background: -moz-linear-gradient(-45deg,  #dda4cb 0%, #90bff0 39%, #6ba8e5 55%, #a2daf5 80%, #bdf3fd 100%);
+background: -webkit-linear-gradient(-45deg,  #dda4cb 0%,#90bff0 39%,#6ba8e5 55%,#a2daf5 80%,#bdf3fd 100%);
+background: linear-gradient(135deg,  #dda4cb 0%,#90bff0 39%,#6ba8e5 55%,#a2daf5 80%,#bdf3fd 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dda4cb', endColorstr='#bdf3fd',GradientType=1 );
+}
+
+#myForm { 
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: #fff;
+}
+
 #myImage {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
@@ -20,3 +34,5 @@
   right: 5%;
   left: 10%;
 }
+
+a { text-decoration: underline; }
