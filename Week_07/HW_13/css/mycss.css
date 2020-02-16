@@ -26,7 +26,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dda4cb', end
 }
 
 .myPar {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -34,5 +34,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dda4cb', end
   right: 5%;
   left: 10%;
 }
+
+.fix-padding {margin-top: 44px;}
 
 a { text-decoration: underline; }
